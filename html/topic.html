@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_connexion.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/vitrine"><h1>FORUM</h1></a>
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Que cherchez-vous ?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+         </div>
+        <nav>
+            <a href="/posts">Création de compte</a>
+        </nav>
+    </header>
+    <div id="container">
+
+        <form method="post">
+            <div class="total">
+                <div class="gauche">
+                    <h1>Crée un topic</h1>
+                    <select name="boite1" onChange="choix(this.form)">
+                        <option selected>topic</option>
+                        <option>sport</option>
+                        <option>cinema</option>
+                        <option>coiffure</option>
+                        <optio>horreur</option>
+                    <option>histoire</option>
+                        <option>autre</option>
+                    </select>
+                </div>
+                <div class="droite">
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <label for="ameliorer">
+                            Tu as quelque chose a dire?
+                            </label>
+                            <br>
+                            
+                            <textarea name="ameliorer" id="ameliorer" rows="10" cols="90">
+                            </textarea>       
+                        </p>
+                </div>
+            </div>
+
+            <footer>
+                <p id="contact">Contact : 07 81 27 36 84 | &copy; 2022, Forum</p>
+                
+            </footer>
+        </form>
+
+    </div>
+</body>
+</html>

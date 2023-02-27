@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_page.css">
+    <title>FORUM</title>
+</head>
+<body>
+    <header>
+        <a href="/vitrine"><h1>FORUM</h1></a>
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Que cherchez-vous ?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+         </div>
+        <nav>
+            <a href="/posts">CONNEXION</a>
+            <a href="login.html">INSCRIPTION</a>
+        </nav>
+    </header>
+    <div class="titre">
+        <h1>(Nom du boug)</h1>
+        <H1>Pk les Algériens sont h24 énerver</H1>
+    </div>
+    <div class="wrapper">
+        <div class="nom">
+            <h1>nom du boug</h1>
+            <div class="message">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore eum in a non est aspernatur quaerat possimus cum exercitationem veritatis, libero omnis numquam eos? Perspiciatis repudiandae odit soluta eum labore.</h1>
+            </div>
+            <script>
+            function changerpuce(imgid) {
+ 
+                var img = document.getElementById(imgid);
+                 
+                if (img.src.match("https://cdn.discordapp.com/attachments/975669869569794099/983755684732633088/unknown.png")) {
+     
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/983756072298876958/unknown.png";
+                }
+                else {
+     
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/983755684732633088/unknown.png";
+     
+                }
+     
+            }
+            </script>
+            
+        </div>
+        <img id="toto" src="https://cdn.discordapp.com/attachments/975669869569794099/983755684732633088/unknown.png"  id="button" onclick="changerpuce('toto')" alt="Mon image" />
+    </div>
+    <div class="commentaires">
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="ameliorer">
+                Tu as quelque chose a dire?
+                </label>
+                <br>
+                
+                <textarea name="ameliorer" id="ameliorer" rows="10" cols="100">
+                </textarea>       
+            </p>
+        </form>
+    </div>
+
+    <footer>
+        <p id="contact">Contact : 07 81 27 36 84 | &copy; 2022, Forum</p>
+    </footer>
+</body>
+
+</html>
